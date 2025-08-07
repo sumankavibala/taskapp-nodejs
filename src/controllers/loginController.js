@@ -30,6 +30,7 @@ export const signUp = async(req,res)=>{
 
 
 export const login = async(req,res)=>{
+  console.log('first')
   const {username,password} = req.body;
   try {
     const result = await pool.query(
